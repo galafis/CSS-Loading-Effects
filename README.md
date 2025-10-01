@@ -1,151 +1,176 @@
-# CSS Loading Effects
+# CSS Loading Effects - Professional Collection
 
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/galafis/CSS-Loading-Effects?style=for-the-badge&color=blue)
+![GitHub repo size](https://img.shields.io/github/repo-size/galafis/CSS-Loading-Effects?style=for-the-badge&color=green)
+![GitHub license](https://img.shields.io/github/license/galafis/CSS-Loading-Effects?style=for-the-badge&color=lightgrey)
 
-Coleção de efeitos de loading criativos implementados puramente com CSS3, incluindo animações, transições e transformações para melhorar a experiência do usuário durante carregamentos.
+## Overview
 
-## 🎯 Demonstração
+This repository presents a professional collection of **CSS3 loading effects and animations**, meticulously crafted to provide elegant and performant visual feedback during asynchronous operations. Designed with modern web development in mind, these effects are pure CSS, ensuring no JavaScript dependencies for core animations, and are fully responsive and customizable.
 
-Este projeto apresenta uma base para implementação de efeitos de loading modernos usando apenas CSS, sem dependências JavaScript.
+## Features
 
-## ✨ Características
+-   **Pure CSS3**: All animations are implemented using native CSS3, ensuring high performance and broad browser compatibility.
+-   **Responsive Design**: Optimized for seamless display across various devices and screen sizes.
+-   **Customizable**: Easily adapt colors, sizes, and animation timings through CSS variables.
+-   **Performance-Oriented**: Utilizes hardware-accelerated CSS properties for smooth and efficient animations.
+-   **Modular Structure**: Each loading effect is encapsulated, allowing for easy integration into any project.
 
-- **Animações CSS Puras**: Efeitos implementados apenas com CSS3
-- **Transições Suaves**: Transformações fluidas e responsivas
-- **Design Moderno**: Interface limpa e profissional
-- **Performance Otimizada**: Animações eficientes usando transform
-- **Responsivo**: Adaptável a diferentes dispositivos
+## Repository Structure
 
-## 🛠️ Tecnologias
+The project follows a clean and organized structure to facilitate development and maintenance:
 
-- **HTML5**: Estrutura semântica
-- **CSS3**: Animações, transições e transformações
-- **CSS Variables**: Sistema de cores customizáveis
-
-## 📁 Estrutura do Projeto
-
+```mermaid
+graph TD
+    A[CSS-Loading-Effects] --> B(src/)
+    A --> C(docs/)
+    A --> D(tests/)
+    B --> B1(index.html)
+    B --> B2(styles.css)
+    C --> C1(README.md)
+    C --> C2(repo_structure.mmd)
+    C --> C3(examples/)
+    D --> D1(test-spinner.html)
+    D --> D2(test-dual-spinner.html)
 ```
-CSS-Loading-Effects/
-├── index.html          # Página de demonstração
-├── styles.css          # Efeitos de loading e estilos
-├── README.md           # Documentação
-├── LICENSE             # Licença MIT
-└── .gitignore          # Arquivos ignorados pelo Git
-```
 
-## 🚀 Como Usar
+Alternatively, here is a visual representation of the repository structure:
 
-### Instalação
+![Repository Structure Diagram](docs/repo_structure.png)
 
-1. Clone o repositório:
+## Installation
+
+To use these loading effects in your project, simply clone the repository:
+
 ```bash
 git clone https://github.com/galafis/CSS-Loading-Effects.git
 cd CSS-Loading-Effects
 ```
 
-2. Abra o arquivo `index.html` no navegador:
-```bash
-# Usando Python
-python -m http.server 8000
+Then, link the `styles.css` file from the `src/` directory to your HTML:
 
-# Usando Node.js
-npx serve .
+```html
+<link rel="stylesheet" href="path/to/CSS-Loading-Effects/src/styles.css">
 ```
 
-### Implementação de Efeitos
+## Usage Examples
 
-Para adicionar novos efeitos de loading, você pode expandir o CSS com animações como:
+### Classic Spinner
 
-```css
-/* Spinner rotativo */
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 4px solid #f3f3f3;
-    border-top: 4px solid var(--primary-color);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* Pulse effect */
-.pulse {
-    animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-}
-
-/* Fade in/out */
-.fade {
-    animation: fade 3s infinite;
-}
-
-@keyframes fade {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 1; }
-}
+```html
+<div class="spinner"></div>
 ```
 
-## 🎨 Tipos de Efeitos Suportados
+### Bouncing Dots Loader
 
-- **Transform Effects**: Scale, rotate, translate
-- **Opacity Animations**: Fade in/out, pulse
-- **Border Animations**: Loading bars, progress indicators
-- **Gradient Animations**: Color transitions
-- **Hover Effects**: Interactive feedback
-
-## 🔧 Personalização
-
-Modifique as variáveis CSS para personalizar cores:
-
-```css
-:root {
-    --primary-color: #667eea;    /* Cor principal dos efeitos */
-    --secondary-color: #764ba2;  /* Cor secundária */
-}
+```html
+<div class="dots-loader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
 ```
 
-## 📈 Extensões Possíveis
+### Button with Loading State
 
-- [ ] Mais tipos de spinners (dots, bars, waves)
-- [ ] Efeitos de skeleton loading
-- [ ] Progress bars animadas
-- [ ] Loading overlays
-- [ ] Efeitos de shimmer
-- [ ] Integração com JavaScript para controle dinâmico
+```html
+<button class="btn loading">Loading...</button>
+```
 
-## 🤝 Contribuindo
+For a full demonstration of all effects, open `src/index.html` in your browser.
 
-Contribuições são bem-vindas! Para adicionar novos efeitos:
+## Live Demo
 
-1. Fork o projeto
-2. Crie uma branch para seu efeito (`git checkout -b feature/NovoEfeito`)
-3. Commit suas mudanças (`git commit -m 'Adiciona novo efeito de loading'`)
-4. Push para a branch (`git push origin feature/NovoEfeito`)
-5. Abra um Pull Request
+A live demonstration of these CSS Loading Effects is available on GitHub Pages: [https://galafis.github.io/CSS-Loading-Effects/](https://galafis.github.io/CSS-Loading-Effects/)
 
-## 📄 Licença
+## Contributing
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICENSE) para detalhes.
+Contributions are welcome! Please feel free to open issues or submit pull requests to improve this collection.
 
-## 👨‍💻 Autor
+## License
 
-**Gabriel Demetrios Lafis**
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- GitHub: [@galafis](https://github.com/galafis)
-- Email: gabrieldemetrios@gmail.com
+## Author
+
+Created with ❤️ by [Gabriel Demetrios Lafis](https://github.com/galafis)
 
 ---
 
-⭐ Se este projeto foi útil, considere deixar uma estrela!
+# Efeitos de Carregamento CSS - Coleção Profissional
+
+## Visão Geral
+
+Este repositório apresenta uma coleção profissional de **efeitos e animações de carregamento CSS3**, meticulosamente elaborados para fornecer feedback visual elegante e performático durante operações assíncronas. Projetados com o desenvolvimento web moderno em mente, esses efeitos são puramente CSS, garantindo que não haja dependências de JavaScript para as animações principais, e são totalmente responsivos e personalizáveis.
+
+## Funcionalidades
+
+-   **CSS3 Puro**: Todas as animações são implementadas usando CSS3 nativo, garantindo alto desempenho e ampla compatibilidade com navegadores.
+-   **Design Responsivo**: Otimizado para exibição perfeita em vários dispositivos e tamanhos de tela.
+-   **Customizável**: Adapte facilmente cores, tamanhos e tempos de animação através de variáveis CSS.
+-   **Orientado ao Desempenho**: Utiliza propriedades CSS aceleradas por hardware para animações suaves e eficientes.
+-   **Estrutura Modular**: Cada efeito de carregamento é encapsulado, permitindo fácil integração em qualquer projeto.
+
+## Estrutura do Repositório
+
+O projeto segue uma estrutura limpa e organizada para facilitar o desenvolvimento e a manutenção:
+
+![Diagrama de Estrutura do Repositório](docs/repo_structure.png)
+
+## Instalação
+
+Para usar esses efeitos de carregamento em seu projeto, basta clonar o repositório:
+
+```bash
+git clone https://github.com/galafis/CSS-Loading-Effects.git
+cd CSS-Loading-Effects
+```
+
+Em seguida, vincule o arquivo `styles.css` do diretório `src/` ao seu HTML:
+
+```html
+<link rel="stylesheet" href="path/to/CSS-Loading-Effects/src/styles.css">
+```
+
+## Exemplos de Uso
+
+### Spinner Clássico
+
+```html
+<div class="spinner"></div>
+```
+
+### Carregador de Pontos Saltitantes
+
+```html
+<div class="dots-loader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+</div>
+```
+
+### Botão com Estado de Carregamento
+
+```html
+<button class="btn loading">Carregando...</button>
+```
+
+Para uma demonstração completa de todos os efeitos, abra `src/index.html` em seu navegador.
+
+## Demonstração ao Vivo
+
+Uma demonstração ao vivo desses Efeitos de Carregamento CSS está disponível no GitHub Pages: [https://galafis.github.io/CSS-Loading-Effects/](https://galafis.github.io/CSS-Loading-Effects/)
+
+## Contribuição
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests para melhorar esta coleção.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
+
+## Autor
+
+Criado com ❤️ por [Gabriel Demetrios Lafis](https://github.com/galafis)
 
