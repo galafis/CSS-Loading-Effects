@@ -1,0 +1,6 @@
+graph TD
+    A[Início] --> B{Carregando?}
+    B -- Sim --> C[Exibir Efeito de Loading]
+    C --> D[Conteúdo Carregado]
+    B -- Não --> D
+    D --> E[Fim]

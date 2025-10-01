@@ -1,12 +1,35 @@
 # CSS Loading Effects
 
-![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+**Índice**
+
+- [Demonstração](#-demonstração)
+- [Características](#-características)
+- [Tecnologias](#️-tecnologias)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Como Usar](#-como-usar)
+- [Tipos de Efeitos Suportados](#-tipos-de-efeitos-suportados)
+- [Personalização](#-personalização)
+- [Extensões Possíveis](#-extensões-possíveis)
+- [Contribuindo](#-contribuindo)
+- [Licença](#-licença)
+- [Autor](#-autor)
+
+
 
 Coleção de efeitos de loading criativos implementados puramente com CSS3, incluindo animações, transições e transformações para melhorar a experiência do usuário durante carregamentos.
 
+[English Version](README.en.md)
+
+
 ## 🎯 Demonstração
+
+![Diagrama de Fluxo](docs/assets/flowchart_pt.png)
+
+
 
 Este projeto apresenta uma base para implementação de efeitos de loading modernos usando apenas CSS, sem dependências JavaScript.
 
@@ -28,11 +51,17 @@ Este projeto apresenta uma base para implementação de efeitos de loading moder
 
 ```
 CSS-Loading-Effects/
-├── index.html          # Página de demonstração
-├── styles.css          # Efeitos de loading e estilos
-├── README.md           # Documentação
-├── LICENSE             # Licença MIT
-└── .gitignore          # Arquivos ignorados pelo Git
+├── public/
+│   ├── index.html          # Página de demonstração
+│   └── examples/           # Exemplos de uso
+├── src/
+│   └── styles.css          # Efeitos de loading e estilos
+├── docs/                   # Documentação adicional
+├── tests/                  # Testes unitários
+├── config/                 # Arquivos de configuração
+├── README.md               # Documentação principal
+├── LICENSE                 # Licença MIT
+└── .gitignore              # Arquivos ignorados pelo Git
 ```
 
 ## 🚀 Como Usar
@@ -148,4 +177,3 @@ Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE](LICE
 ---
 
 ⭐ Se este projeto foi útil, considere deixar uma estrela!
-

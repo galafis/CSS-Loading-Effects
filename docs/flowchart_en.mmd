@@ -1,0 +1,6 @@
+graph TD
+    A[Start] --> B{Loading?}
+    B -- Yes --> C[Display Loading Effect]
+    C --> D[Content Loaded]
+    B -- No --> D
+    D --> E[End]
