@@ -127,6 +127,34 @@ Para adicionar novos efeitos de loading, você pode expandir o CSS com animaçõ
 
 ## 🎨 Tipos de Efeitos Suportados
 
+```mermaid
+graph TD
+    A[CSS Loading Effects] --> B[Categorias de Efeitos]
+    B --> B1[Transform Effects]
+    B --> B2[Opacity Animations]
+    B --> B3[Border Animations]
+    B --> B4[Gradient Animations]
+    B --> B5[Hover Effects]
+    B1 --> C[Pipeline de Animação]
+    B2 --> C
+    B3 --> C
+    B4 --> C
+    B5 --> C
+    C --> D1[@keyframes Definition]
+    D1 --> D2[animation Property]
+    D2 --> D3[duration · timing · delay · iteration]
+    D3 --> E[CSS Variables]
+    E --> E1[--primary-color]
+    E --> E2[--secondary-color]
+    E1 --> F[Rendered Loading Effect]
+    E2 --> F
+    B1 --> G1[scale · rotate · translate]
+    B2 --> G2[fade · pulse]
+    B3 --> G3[progress bars · spinners]
+    B4 --> G4[color transitions]
+    B5 --> G5[interactive feedback]
+```
+
 - **Transform Effects**: Scale, rotate, translate
 - **Opacity Animations**: Fade in/out, pulse
 - **Border Animations**: Loading bars, progress indicators
